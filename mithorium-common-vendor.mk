@@ -185,6 +185,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsconfig-V2.1-java \
     vendor.qti.latency-V2.0-java \
     vendor.qti.latency-V2.1-java
+
+PRODUCT_PACKAGES += \
+    libimscamera_jni_libimscamera_jni_symlink64 \
+    libimsmedia_jni_libimsmedia_jni_symlink64
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/mithorium-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/mithorium-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
@@ -586,6 +590,11 @@ PRODUCT_PACKAGES += \
     TimeService \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.gnss@4.0-service
+
+PRODUCT_PACKAGES += \
+    libEGL_adreno_libEGL_adreno_symlink64 \
+    libGLESv2_adreno_libGLESv2_adreno_symlink64 \
+    libq3dtools_adreno_libq3dtools_adreno_symlink64
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/mithorium-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/mithorium-common/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
@@ -668,3 +677,8 @@ PRODUCT_PACKAGES += \
     libaudioparsers \
     libts_detected_face_hal \
     libts_face_beautify_hal
+
+PRODUCT_PACKAGES += \
+    libEGL_adreno_libEGL_adreno_symlink32 \
+    libGLESv2_adreno_libGLESv2_adreno_symlink32 \
+    libq3dtools_adreno_libq3dtools_adreno_symlink32
